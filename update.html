@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Battery</title>
+</head>
+<body>
+    <h1>Update Battery</h1>
+    <form method="POST">
+        <label for="nameBrand">Name Brand:</label>
+        <input type="text" id="nameBrand" name="nameBrand" value="{{ battery.nameBrand }}" required><br>
+        <label for="voltage">Voltage:</label>
+        <input type="number" id="voltage" name="voltage" value="{{ battery.voltage }}" required><br>
+        <label for="energyInWatth">Energy (Wh):</label>
+        <input type="number" id="energyInWatth" name="energyInWatth" value="{{ battery.energyInWatth }}" required><br>
+        <button type="submit">Update Battery</button>
+    </form>
+</body>
+</html>
